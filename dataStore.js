@@ -1,0 +1,698 @@
+const dataStore = {
+  '@muscleGroups': {
+    pushups: {
+      exercices: [
+        {
+          image: require('./images/pushups1.png'),
+          link: 'hLRIagCc63s',
+          name: 'Wall Pushups',
+          instructions: 'Standing with your feet together, place your palms flat against a wall. Bend your shoulders and elbows until your forehead gently touches the wall.',
+          progression: [
+            '1 X 10',
+            '2 X 25',
+            '3 X 50',
+          ],
+        },
+        {
+          image: require('./images/pushups2.png'),
+          link: 'G1g2VwvvBiE',
+          name: 'Incline Pushups',
+          instructions: 'Standing with your feet together, grasp a desk with yourarms straight and feet shoulder width apart. Bend the shoulders and elbows until your torso gently touches the top of the desk.',
+          progression: [
+            '1 X 10',
+            '2 X 20',
+            '3 X 40',
+          ],
+        },
+        {
+          image: require('./images/pushups3.png'),
+          link: '7z_8M8a8Krk',
+          name: 'Kneeling Pushups',
+          instructions: 'Kneel on the floor with your feet together and palms flat on the ground. Using your knees as a pivot, bend at the shoulders and elbows until your chest is almost touching the floor.',
+          progression: [
+            '1 X 10',
+            '2 X 15',
+            '3 X 30',
+          ],
+        },
+        {
+          image: require('./images/pushups4.png'),
+          link: 'c97zl8toIFQ',
+          name: 'Half Pushups',
+          instructions: 'Position yourself over a basketball, so the ball is directly below your hips. Bend at the shoulders and elbows until your hips lightly make contact with the ball.',
+          progression: [
+            '1 X 8',
+            '2 X 12',
+            '2 X 25',
+          ],
+        },
+        {
+          image: require('./images/pushups5.png'),
+          link: 'h287e16DSIU',
+          name: 'Full Pushups',
+          instructions: 'Place a tennis ball below your chest. Bend at the shoulders and elbows until your chest kisses the ball, then pause and push up.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/pushups6.png'),
+          link: '2HqxHORXErs',
+          name: 'Close Pushups',
+          instructions: 'With the tips of your index fingers touching in a V shape, bend at the shoulders and elbows until your chest gently touches the backs of your hands.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/pushups7.png'),
+          link: '4A-X8DeQtRII',
+          name: 'Uneven Pushups',
+          instructions: 'With one arm firmly supporting you, place the other hand on a basketball. Bend at the elbow and shoulders until your chest touches the top of whichever hand is on the ball.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/pushups8.png'),
+          link: 'Aq2hVcfyEwY',
+          name: '1/2 One-ArmPushups',
+          instructions: 'Place one hand on the floor beneath your breastbone with your arm straight and the other hand on your back. Bend at the shoulder and elbow until your hips reach the top of the basketball.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/pushups9.png'),
+          link: 'eZsj09wC6b4',
+          name: 'Lever Pushups',
+          instructions: 'Place one hand on a basketball which is out to the side of your body. Lower yourself down until your chest is one fists width away from the floor.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/pushups10.png'),
+          link: 'Y_aJ7YhR7CM',
+          name: 'One-Arm Pushups',
+          instructions: 'Keep the spine and hips aligned, and shift your body weight so that your supporting arm goes straight down below your chest. Bend at the shoulder and elbow until your chest touches the floor.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+      ],
+    },
+    pullups: {
+      exercices: [
+        {
+          image: require('./images/pullups1.png'),
+          link: 'Da6r9U7wLKE',
+          name: 'Vertical Pullups',
+          instructions: 'Stand and grasp the edge of a wall with your elbows bent. Push against the wall and straighten your arms.',
+          progression: [
+            '1 X 10',
+            '2 X 20',
+            '3 X 40',
+          ],
+        },
+        {
+          image: require('./images/pullups2.png'),
+          link: 'jllUv3o4TNE',
+          name: 'Horizontal Pullups',
+          instructions: 'Grasp the top of a desk from underneath it. Keep your body locked and tense. Smoothly pull yourself upward, keeping your body aligned as you do so.',
+          progression: [
+            '1 X 10',
+            '2 X 20',
+            '3 X 30',
+          ],
+        },
+        {
+          image: require('./images/pullups3.png'),
+          link: 'rh8ccBQJk-o',
+          name: 'Jackknife Pullups',
+          instructions: 'Hang on a pullup bar with your legs resting on a desk underneathyou. With tight shoulders, smoothly pull yourself up, using your straight legs to assist you.',
+          progression: [
+            '1 X 10',
+            '2 X 15',
+            '3 X 20',
+          ],
+        },
+        {
+          image: require('./images/pullups4.png'),
+          link: '3AvYWCG7Z1k',
+          name: 'Half Pullups',
+          instructions: 'Hang on a pullup bar with your upper arms parallel to the floor. Pull up smoothly. Allow your elbows to travel forwardif it seems right to you.',
+          progression: [
+            '1 X 8',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/pullups5.png'),
+          link: 'ZQbup1SsHfU',
+          name: 'Full Pullups',
+          instructions: 'Hang on the bar with a very slight bend in the elbows to take stress off the arm joints. Bend at the elbows and shoulders until your chin passes over the bar.',
+          progression: [
+            '1 X 5',
+            '2 X 8',
+            '2 X 10',
+          ],
+        },
+        {
+          image: require('./images/pullups6.png'),
+          link: 'KRaZ9Nr7hDw',
+          name: 'Close Pullups',
+          instructions: 'Hang on the bar withyour hands next to each other. Pull yourself upwards while trying to minimize leg movement during the set.',
+          progression: [
+            '1 X 5',
+            '2 X 8',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/pullups7.png'),
+          link: 'KHK2tkskQOQ',
+          name: 'Uneven Pullups',
+          instructions: 'Hang on the bar with one hand and the other grasping onto the wrist of the hand grabbing the bar. Bend at the elbows and shoulders to smoothly pull yourself upwards.',
+          progression: [
+            '1 X 5',
+            '2 X 7',
+            '2 X 9',
+          ],
+        },
+        {
+          image: require('./images/pullups8.png'),
+          link: 'QMyB6V4xUFI',
+          name: '1/2 One-Arm Pullups',
+          instructions: 'Hang on the bar with one arm, with the elbow at a right angle. Smoothly pull your body up until your chin is over the height of the bar.',
+          progression: [
+            '1 X 4',
+            '2 X 6',
+            '2 X 8',
+          ],
+        },
+        {
+          image: require('./images/pullups9.png'),
+          link: '3Cp_J-mP7u4',
+          name: 'Assisted One-Arm Pullups',
+          instructions: 'Hang on the bar with one arm and with the other grabbing a towel wrapped around the bar. Pull yourself upwards until you can release the towel and continue pulling until your chin is over the bar.',
+          progression: [
+            '1 X 3',
+            '2 X 5',
+            '2 X 7',
+          ],
+        },
+        {
+          image: require('./images/pullups10.png'),
+          link: '2rQi82sF_so',
+          name: 'One-Arm Pullups',
+          instructions: 'Hang on the bar with one arm, virtually straight with only one kink in it to take stress off the joints. Bend at the elbow and shoulder and pull your body up with as little momentum as possible.',
+          progression: [
+            '1 X 1',
+            '2 X 3',
+            '3 X 6',
+          ],
+        },
+      ],
+    },
+    handstands: {
+      exercices: [
+        {
+          image: require('./images/handstands1.png'),
+          link: 'tYX-9RQyiJA',
+          name: 'Wall Headstands',
+          instructions: 'In a crawling position next to a wall, bring your strongest knee to the corresponding elbow. Pushwith that leg and your arms, straightening out your other leg, until youmake contact with the wall.',
+          progression: [
+            '30 S',
+            '1 M',
+            '2 M ',
+          ],
+        },
+        {
+          image: require('./images/handstands2.png'),
+          link: 'oLGMF0yilWQ',
+          name: 'Crow Stands',
+          instructions: 'Lean forward with your palms flat on the ground facing forward and your knees outside your elbows. Push up with your arms and hoist your legs up and tight for the required time.',
+          progression: [
+            '10 S',
+            '30 S',
+            '1 M',
+          ],
+        },
+        {
+          image: require('./images/handstands3.png'),
+          link: 'gI4vnrDAxEQ',
+          name: 'Wall Handstands',
+          instructions: 'Place your palms flat on the floor six to ten inches from the base of the wall. Push off and straighten your legs until you find the wall.',
+          progression: [
+            '10 S',
+            '30 S',
+            '2 M',
+          ],
+        },
+        {
+          image: require('./images/handstands4.png'),
+          link: 'a9WJRuue0YA',
+          name: 'Half Handstand Pushups',
+          instructions: 'While in a handstand position next to a wall, bend at the shoulders and elbows until the top of your head is halfway towards touching the ground, then push back up.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/handstands5.png'),
+          link: 'S27I9QGHtzo',
+          name: 'Handstand Pushups',
+          instructions: "While in a handstand position, bend at the shoulders and elbows until the top of your head is touching the ground, then push back up. Make sure you're in control to ensure safety.",
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/handstands6.png'),
+          link: 'vWv3P2-zvRQ',
+          name: 'Close Handstand Pushups',
+          instructions: 'While in a handstand position with your index fingers touching, bend at the shoulders and elbows until your head gently touchesthe floor, then push back up.',
+          progression: [
+            '1 X 5',
+            '2 X 9',
+            '2 X 12',
+          ],
+        },
+        {
+          image: require('./images/handstands7.png'),
+          link: 'bzuf-4law2k',
+          name: 'Uneven Handstand Pushups',
+          instructions: 'While in a handstand position with one arm resting on a basketball, apply your weight evenly and bend at the elbow and shoulders until your head gently touches the floor,then push back up.',
+          progression: [
+            '1 X 5',
+            '2 X 8',
+            '2 X 10',
+          ],
+        },
+        {
+          image: require('./images/handstands8.png'),
+          link: 'nvx30GIleRI',
+          name: '1/2 One-Arm Handstand Pushups',
+          instructions: 'While in a handstand position with one arm touching the wall for support, bend at the elbow and shoulder of your supporting arm until your head is halfway towards the floor, then push up.',
+          progression: [
+            '1 X 4',
+            '2 X 6',
+            '2 X 8',
+          ],
+        },
+        {
+          image: require('./images/handstands9.png'),
+          link: '3IJMlCWovF8',
+          name: 'Lever Handstand Pushups',
+          instructions: 'While in a handstand position, bend at the elbow and shoulder of a supporting arm, while straightening out the other arm in front of you, maintaining contact with the floor, then push back up.',
+          progression: [
+            '1 X 3',
+            '2 X 4',
+            '2 X 6',
+          ],
+        },
+        {
+          image: require('./images/handstands10.png'),
+          link: '',
+          name: 'One-Arm Handstand Pushups',
+          instructions: 'While in a handstand position with one arm touchingthe wall for support, bend at the elbow and shoulder of your supporting arm until your head is touches the floor, then push back up.',
+          progression: [
+            '1 X 1',
+            '2 X 2',
+            '1 X 5',
+          ],
+        },
+      ],
+    },
+    squats: {
+      exercices: [
+        {
+          image: require('./images/squats1.png'),
+          link: '3ff9Wwt-Nwo',
+          name: 'Shoulderstand Squats',
+          instructions: 'Place your hands on your lower back for support, whilst keeping your upper arms on the floor. Keeping your torso upright, bend at the hips and knees until your knees touch your forehead.',
+          progression: [
+            '1 X 10',
+            '2 X 25',
+            '3 X 50',
+          ],
+        },
+        {
+          image: require('./images/squats2.png'),
+          link: 'JOkMyXovZRs',
+          name: 'Jackknife Squats',
+          instructions: "\"Tilt slightly forward so that you can take some of your body's weight through your hands. Bend at the knees and hips until your hamstrings meetyour calves.\"",
+          progression: [
+            '1 X 10',
+            '2 X 20',
+            '3 X 40',
+          ],
+        },
+        {
+          image: require('./images/squats3.png'),
+          link: 'HLFLlXo58rc',
+          name: 'Supported Squats',
+          instructions: 'Arms straight out, holding onto a desk, slowly lower yourself down by bending at the hips and the knees, keeping your back as straight as possible.',
+          progression: [
+            '1 X 10',
+            '2 X 15',
+            '3 X 30',
+          ],
+        },
+        {
+          image: require('./images/squats4.png'),
+          link: '586aCXnEuMc',
+          name: 'Half Squats',
+          instructions: 'Toes pointing slightly outwards, bend atthe hips and knees until your knees are angled at 90 degrees.',
+          progression: [
+            '1 X 8',
+            '2 X 35',
+            '2 X 50',
+          ],
+        },
+        {
+          image: require('./images/squats5.png'),
+          link: '3y1K-JHLSp4',
+          name: 'Full Squats',
+          instructions: 'Standtall, with your feet a bit wider than shoulder width apart. Descend at acontrolled speed until the backs of your thighs are resting against yourcalves.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 30',
+          ],
+        },
+        {
+          image: require('./images/squats6.png'),
+          link: 'U9-lPRDh33I',
+          name: 'Close Squats',
+          instructions: 'Stand up straight with your heels together, toes angled out slightly. Descend at a controlled speed until the backs of your thighs are resting against your calves.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/squats7.png'),
+          link: '0pJ9byv11fE',
+          name: 'Uneven Squats',
+          instructions: 'Stand up straight with one foot flat on the floor, and another resting on a basketball. Bend at the knees and hips until the back of the thigh of your non ball leg touches your calf.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/squats8.png'),
+          link: 'Cjnxj9efP_s',
+          name: '1/2 One-Leg Squats',
+          instructions: 'Your elevated foot should be at about the level of your opposite thigh. Keep the back flat and the heel of your leg on the floor at all times as you descend.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '3 X 20',
+          ],
+        },
+        {
+          image: require('./images/squats9.png'),
+          link: 'qPBGkesB8NE',
+          name: 'Assisted One-Leg Squats',
+          instructions: 'Stand up with one foot on the floor and the other foot up in the air. Have a basketball beside you. As you bend, use the basketball to help support yourself.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/squats10.png'),
+          link: '46ikgI4oXHQ',
+          name: 'One-Leg Squats',
+          instructions: 'Stand upwith one foot on the floor and the other foot up in the air. Descend smoothly until the back of the thigh of the supporting leg compresses against your calf.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 50',
+          ],
+        },
+      ],
+    },
+    legraises: {
+      exercices: [
+        {
+          image: require('./images/legraises1.png'),
+          link: 'J3-uUp2wprk',
+          name: 'Knee Tucks',
+          instructions: "Leaning on the edge of a seat, straighten your legs, making sure they don't touch the floor. Pull your knees towards your chestin a smooth motion.",
+          progression: [
+            '1 X 10',
+            '2 X 25',
+            '3 X 40',
+          ],
+        },
+        {
+          image: require('./images/legraises2.png'),
+          link: '4j3UMV0BgvA',
+          name: 'Flat Knee Raises',
+          instructions: 'Lying on your back, bend your knees so that they are approximately 90 degrees. Pull your knees towards your chest, keeping your knees at a right angle throughout and exhaling as you go.',
+          progression: [
+            '1 X 10',
+            '2 X 20',
+            '3 X 35',
+          ],
+        },
+        {
+          image: require('./images/legraises3.png'),
+          link: 'OQDi0nj6gIc',
+          name: 'Flat Bent Leg Raises',
+          instructions: 'Lie on your back and raise your legs, bending them at the knee approximately 45 degrees from being straight. Lift your legs making sure that the angle of the knees does not change.',
+          progression: [
+            '1 X 10',
+            '2 X 15',
+            '3 X 30',
+          ],
+        },
+        {
+          image: require('./images/legraises4.png'),
+          link: '3Rfvzo2Hoe8',
+          name: 'Flat Frog Raises',
+          instructions: 'Lie on your backand raise your slightly bent legs upwards. Then, straighten and lower your legs, keeping them perfectly straight until they are an inch or two above the floor.',
+          progression: [
+            '1 X 8',
+            '2 X 15',
+            '3 X 25',
+          ],
+        },
+        {
+          image: require('./images/legraises5.png'),
+          link: 'VmiVUBn4zzs',
+          name: 'Flat Straight Leg Raises',
+          instructions: 'Lie on your back with your legs straightand slightly off the floor. Keeping them locked, raise your feet until your body makes a 90 degree angle.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 20',
+          ],
+        },
+        {
+          image: require('./images/legraises6.png'),
+          link: 'GUoPNXBM1KU',
+          name: 'Hanging Knee Raises',
+          instructions: 'Hanging on a pullup bar with your legs straight, bring your knees up smoothly until they are level with your pelvis and your knees are at a right angle.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/legraises7.png'),
+          link: 'l8x4nhhFFoQ',
+          name: 'Hanging Bent Leg Raises',
+          instructions: 'Hanging on a pullup bar with your legs slightly bent and your knees pointing in front of you, move at the hips and bring your knees up smoothly. Keep the knee angle locked as you do this.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/legraises8.png'),
+          link: 'h8v5wzeJUCo',
+          name: 'Hanging Frog Raises',
+          instructions: 'Hanging on a pullup bar with your legs slightly bent, move at the hips and bring your knees up smoothly. Once you reach the peak position, straighten out your legs and then bring them back down slowly.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/legraises9.png'),
+          link: 'pKlyLEl5pEw',
+          name: 'Partial Straight Leg Raises',
+          instructions: 'Hanging on a pullup bar with your legs straight and at a 45 degree angle, bring your legsup until your body makes a 90 degree angle. Then, slowly revert the motion to the starting position.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '3 X 15',
+          ],
+        },
+        {
+          image: require('./images/legraises10.png'),
+          link: 'yfRUb5fEjq0',
+          name: 'Hanging Straight Leg Raises',
+          instructions: 'Hanging on a pullup barwith your legs straight, bring your legs up until your body makes a 90 degree angle. Reverse the motion as your bring your legs down.',
+          progression: [
+            '1 X 5',
+            '2 X 10',
+            '3 X 30',
+          ],
+        },
+      ],
+    },
+    bridges: {
+      exercices: [
+        {
+          image: require('./images/bridges1.png'),
+          link: '9ZqyopHafZU',
+          name: 'Short Bridges',
+          instructions: 'Lie on your back with your knees bent and your feet shoulderwidth apart. Then thrust your hips towards the ceiling, forming a straight line with your thighs, trunk, and torso, with no sagging on the hips.',
+          progression: [
+            '1 X 10',
+            '2 X 25',
+            '3 X 50',
+          ],
+        },
+        {
+          image: require('./images/bridges2.png'),
+          link: 'V1E5Vs3OmgM',
+          name: 'Straight Bridges',
+          instructions: 'Sit on the floor with your arms beside you, your palms face-down on the floor, and legs straight. Push you hips upwards until your legs and torso form a straight line.',
+          progression: [
+            '1 X 10',
+            '2 X 20',
+            '3 X 40',
+          ],
+        },
+        {
+          image: require('./images/bridges3.png'),
+          link: 'kEf-ZGPoQp8',
+          name: 'Angled Bridges',
+          instructions: 'Place your back on an object thatis around knee height, with your palms face down beside your head. Push up until your back is off the object. Your elbows will be bent during theexercise.',
+          progression: [
+            '1 X 8',
+            '2 X 15',
+            '3 X 30',
+          ],
+        },
+        {
+          image: require('./images/bridges4.png'),
+          link: 'FFQysvxK0q4',
+          name: 'Head Bridges',
+          instructions: 'Starting in a bridge position with your back arched and your head gently touching the floor, push up until your head is no longertouching the floor. This is a bridge hold.',
+          progression: [
+            '1 X 8',
+            '2 X 15',
+            '2 X 25',
+          ],
+        },
+        {
+          image: require('./images/bridges5.png'),
+          link: '4vo5Yna0h8Y',
+          name: 'Half Bridges',
+          instructions: 'Lie in a bridge position with a basketball supporting the small your back with feet shoulder width apart. Push up until your back is fully arched and no longer supportedby the basketball.',
+          progression: [
+            '1 X 8',
+            '2 X 15',
+            '2 X 25',
+          ],
+        },
+        {
+          image: require('./images/bridges6.png'),
+          link: 'a7uYB8OV7gk',
+          name: 'Full Bridges',
+          instructions: 'Lie on your back with your hands alongside yourhead, with the palms flat on the floor and fingers pointing toward your toes. Push up until your back is arched. Allow your head to tilt backwards so you can look behind you.',
+          progression: [
+            '1 X 6',
+            '2 X 10',
+            '2 X 15',
+          ],
+        },
+        {
+          image: require('./images/bridges7.png'),
+          link: 'UqwSGkNeOMM',
+          name: 'Wall Walking Bridges (Down)',
+          instructions: 'Stand beside a wall with your palms flat against the wall and fingers pointing towards the floor. Bend your back backwards as you walk down the wall with your hands, until you can place your hands on the floor.',
+          progression: [
+            '1 X 3',
+            '2 X 6',
+            '2 X 10',
+          ],
+        },
+        {
+          image: require('./images/bridges8.png'),
+          link: 'VyhXna8HB28',
+          name: 'Wall Walking Bridges (Up)',
+          instructions: 'Start in a bridge hold with your hands beside a wall. Placing your hands on the walland pushing through it, walk upwards on the wall until you are almost straight. Push gently away from the wall until you are standing clear of it.',
+          progression: [
+            '1 X 2',
+            '2 X 4',
+            '3 X 8',
+          ],
+        },
+        {
+          image: require('./images/bridges9.png'),
+          link: 'WadCw_3AQ3s',
+          name: 'Closing Bridges',
+          instructions: 'Standing straight, place your hands on your hips and push yourpelvis forward. Then, once you can see the floor, take your hands off your hips and pass them back over your shoulders, extending your arms untilyour palms rest on the floor.',
+          progression: [
+            '1 X 1',
+            '2 X 3',
+            '2 X 8',
+          ],
+        },
+        {
+          image: require('./images/bridges10.png'),
+          link: 't6B2lJM8pIw',
+          name: 'Stand-to-Stand Bridges',
+          instructions: 'Perform a closing bridge (exercise 9) into a full bridge hold. Then, press your hands on the floor and pull in your hips until you are standing straight with your hands by your sides.',
+          progression: [
+            '1 X 1',
+            '2 X 3',
+            '2 X 10',
+          ],
+        },
+      ],
+    },
+  },
+  progress: {
+    pushups: -1,
+    legraises: -1,
+    squats: -1,
+    pullups: -1,
+    handstands: -1,
+    bridges: -1,
+  },
+};
+
+export default dataStore;
