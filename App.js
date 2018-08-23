@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Button, View, Text, ScrollView} from 'react-native';
 import {CheckBox} from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation';
+import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
 import dataStore from './datastore';
 
 const ucFirst = string => (
@@ -23,6 +24,7 @@ class ProgressScreen extends Component {
               <View width={`${dataStore[`@progress-${muscleGroup}`]}%`} height={20} style={{backgroundColor: '#0c204a'}}/>
             </View>
           ])}
+          />
         </View>
       </ScrollView>
     );
@@ -109,6 +111,79 @@ class HandstandsScreen extends Component {
   }
 }
 
+class Tab1 extends Component {
+  render() {
+    return (
+      <Tab heading={"test"}/>
+    )
+  }
+}
+
+
+class Tab2 extends Component {
+  render() {
+    return (
+      <Tab heading={"test"}/>
+    )
+  }
+}
+
+
+class Tab3 extends Component {
+  render() {
+    return (
+      <Tab heading={"test"}/>
+    )
+  }
+}
+
+
+class Tab4 extends Component {
+  render() {
+    return (
+      <Tab heading={"test"}/>
+    )
+  }
+}
+
+
+class Tab5 extends Component {
+  render() {
+    return (
+      <Tab heading={"test"}>
+        <Text>Test</Text>
+      </Tab>
+    )
+  }
+}
+
+class NavScreen extends Component {
+  render() {
+    return (
+      <Container>
+        <Header hasTabs/>
+        <Tabs renderTabBar={() => <ScrollableTab/>}>
+          <Tab heading="Tab1">
+            <Tab1/>
+          </Tab>
+          <Tab heading="Tab2">
+            <Tab2/>
+          </Tab>
+          <Tab heading="Tab3">
+            <Tab3/>
+          </Tab>
+          <Tab heading="Tab4">
+            <Tab4/>
+          </Tab>
+          <Tab heading="Tab5">
+            <Tab5/>
+          </Tab>
+        </Tabs>
+      </Container>
+    );
+  }
+}
+
 const RootStack = createStackNavigator({
     Progress: {
       screen: ProgressScreen,
@@ -131,9 +206,12 @@ const RootStack = createStackNavigator({
     Bridges: {
       screen: BridgesScreen,
     },
+    Nav: {
+      screen: NavScreen,
+    },
   },
   {
-    initialRouteName: 'Progress',
+    initialRouteName: 'Nav',
   }
 );
 
