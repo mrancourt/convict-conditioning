@@ -1,6 +1,6 @@
-const dataStore = {
+{
   "@muscleGroups": {
-    "bridge": {
+    "bridges": {
       "exercices": [
         {
           "image": "",
@@ -74,7 +74,7 @@ const dataStore = {
         }
       ]
     },
-    "handstand": {
+    "handstands": {
       "exercices": [
         {
           "image": "",
@@ -148,7 +148,7 @@ const dataStore = {
         }
       ]
     },
-    "legraise": {
+    "legraises": {
       "exercices": [
         {
           "image": "",
@@ -222,7 +222,7 @@ const dataStore = {
         }
       ]
     },
-    "pullup": {
+    "pullups": {
       "exercices": [
         {
           "image": "",
@@ -296,7 +296,7 @@ const dataStore = {
         }
       ]
     },
-    "pushup": {
+    "pushups": {
       "exercices": [
         {
           "image": "",
@@ -370,7 +370,7 @@ const dataStore = {
         }
       ]
     },
-    "squat": {
+    "squats": {
       "exercices": [
         {
           "image": "",
@@ -445,12 +445,10 @@ const dataStore = {
       ]
     }
   },
-  "@progress-pushups": 0,
-  "@progress-legRaise": 0,
-  "@progress-squats": 0,
-  "@progress-pullups": 0,
+  "@progress-pushups": 10,
+  "@progress-legraises": 20,
+  "@progress-squats": 5,
+  "@progress-pullups": 50,
   "@progress-handstands": 0,
-  "@progress-bridges": 0
-};
-
-export default dataStore;
+  "@progress-bridges": 80
+}
