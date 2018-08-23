@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import {Button, View, Text, ScrollView} from 'react-native';
-import {CheckBox} from 'react-native-elements';
+import {Button, View, Text, ScrollView, Image} from 'react-native';
+// import {CheckBox} from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation';
-import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
+import { Container, Header, Tab, Tabs, ScrollableTab, ListItem, Card, CardItem, Body, Content, Left, Icon, Thumbnail, CheckBox } from 'native-base';
+// import { Container, Header, Content, Card, CardItem, Text, Body } from "native-base";
 import dataStore from './datastore';
+
 
 const ucFirst = string => (
   string.charAt(0).toUpperCase() + string.slice(1)
@@ -24,7 +26,6 @@ class ProgressScreen extends Component {
               <View width={`${dataStore[`@progress-${muscleGroup}`]}%`} height={20} style={{backgroundColor: '#0c204a'}}/>
             </View>
           ])}
-          />
         </View>
       </ScrollView>
     );
@@ -112,9 +113,23 @@ class HandstandsScreen extends Component {
 }
 
 class Tab1 extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      checked: false
+    }
+  }
+
   render() {
+    let {checked} = this.state;
+
     return (
-      <Tab heading={"test"}/>
+      <View>
+        <CheckBox checked={checked} onPress={() => this.setState({checked: !checked})}/>
+        <Text>Tab 1 content</Text>
+
+      </View>
     )
   }
 }
@@ -123,7 +138,35 @@ class Tab1 extends Component {
 class Tab2 extends Component {
   render() {
     return (
-      <Tab heading={"test"}/>
+      <Content>
+        <Card style={{flex: 0}}>
+          <CardItem>
+            <Left>
+              <Thumbnail source={{uri: 'https://via.placeholder.com/100x100'}} />
+              <Body>
+              <Text>NativeBase</Text>
+              <Text note>April 15, 2016</Text>
+              </Body>
+            </Left>
+          </CardItem>
+          <CardItem>
+            <Body>
+            <Image source={{uri: 'https://via.placeholder.com/1200x800'}} style={{height: 100, width: 370, flex: 1}}/>
+            <Text>
+              //Your text here
+            </Text>
+            </Body>
+          </CardItem>
+          <CardItem>
+            <Left>
+              <Button title="button" transparent textStyle={{color: '#87838B'}}>
+                <Icon name="logo-github" />
+                <Text>1,926 stars</Text>
+              </Button>
+            </Left>
+          </CardItem>
+        </Card>
+      </Content>
     )
   }
 }
@@ -132,7 +175,9 @@ class Tab2 extends Component {
 class Tab3 extends Component {
   render() {
     return (
-      <Tab heading={"test"}/>
+      <View>
+        <Text>Tab 3 content</Text>
+      </View>
     )
   }
 }
@@ -141,7 +186,9 @@ class Tab3 extends Component {
 class Tab4 extends Component {
   render() {
     return (
-      <Tab heading={"test"}/>
+      <View>
+        <Text>Tab 4 content</Text>
+      </View>
     )
   }
 }
@@ -150,9 +197,9 @@ class Tab4 extends Component {
 class Tab5 extends Component {
   render() {
     return (
-      <Tab heading={"test"}>
-        <Text>Test</Text>
-      </Tab>
+      <View>
+        <Text>Tab 5 content</Text>
+      </View>
     )
   }
 }
