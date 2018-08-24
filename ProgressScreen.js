@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Button, ScrollView, Text, View,
+  Text, ScrollView, View,
 } from 'react-native';
 import AnimatedBar from 'react-native-animated-bar';
 import PropTypes from 'prop-types';
@@ -15,26 +15,25 @@ const progress = done => (
 );
 
 class ProgressScreen extends Component {
-
   static navigationOptions = {
     title: 'Your Progress',
   };
 
-
   render() {
-    const { navigation } = this.props;
     return (
       <ScrollView>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingTop: 20,
+        }}
+        >
           {Object.keys(dataStore['@muscleGroups']).map(muscleGroup => [
-            <Button
-              key={`nav-${muscleGroup}`}
-              title={muscleGroup}
-              onPress={() => navigation.navigate(ucFirst(muscleGroup))}
-            />,
+            <Text key={`nav-${muscleGroup}`}>{ucFirst(muscleGroup)}</Text>,
             <AnimatedBar
               key={`progress-${muscleGroup}`}
-              style={{margin: 10}}
+              style={{ margin: 10 }}
               progress={dataStore[`@progress-${muscleGroup}`]}
               height={30}
               barColor="#264653"

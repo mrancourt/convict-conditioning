@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  ScrollView, Text, View,
-} from 'react-native';
-import { CheckBox } from 'react-native-elements';
+  Text, Card, CardItem, Body, CheckBox, Content, Left,
+} from 'native-base';
 import dataStore from './datastore';
 
 class ExerciceList extends Component {
@@ -14,29 +13,58 @@ class ExerciceList extends Component {
     };
   }
 
+  onCheckBoxPress(pressed) {
+    const { progress } = this.state;
+    this.setState({ progress: progress >= pressed ? pressed - 1 : pressed });
+  }
+
+  renderProgression = (progression, id) => {
+    const { progress } = this.state;
+    const list = [];
+    progression.forEach((step, _id) => {
+      const stepId = id * progression.length + _id;
+      list.push(
+        <CheckBox
+          key={`step-checkbox-${step}`}
+          checked={stepId <= progress}
+          onPress={() => this.onCheckBoxPress(stepId)}
+        />,
+        <Text style={{ marginLeft: 20 }} key={`step-text-${step}`}>
+          {step}
+        </Text>,
+      );
+    });
+    return list;
+  };
+
   render() {
     const { exercice } = this.props;
-    const { progress } = this.state;
     const { '@muscleGroups': { [exercice]: { exercices = [] } } } = dataStore;
+
     return (
-      <ScrollView>
-        <View style={{
-          flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff',
-        }}
-        >
-          <Text>Pushups Screen</Text>
-          {exercices.map(({ name, instructions }, id) => [
-            <Text key={`name-${name}`}>{name}</Text>,
-            <Text key={`instruction-${name}`}>{instructions}</Text>,
-            <CheckBox
-              key={`checkbox-${name}`}
-              name={`checkbox-${name}`}
-              checked={id <= progress}
-              onPress={() => this.setState({ progress: id <= progress ? id - 1 : id })}
-            />,
-          ])}
-        </View>
-      </ScrollView>
+      <Content padder>
+        {exercices.map(({ name, instructions, progression }, id) => [
+          <Content key={`name-${name}`}>
+            <Card style={{ flex: 0 }}>
+              <CardItem bordered>
+                <Left>
+                  <Body>
+                    <Text style={{ fontWeight: 'bold' }}>{name}</Text>
+                  </Body>
+                </Left>
+              </CardItem>
+              <CardItem bordered>
+                <Body>
+                  <Text>{instructions}</Text>
+                </Body>
+              </CardItem>
+              <CardItem>
+                {this.renderProgression(progression, id)}
+              </CardItem>
+            </Card>
+          </Content>,
+        ])}
+      </Content>
     );
   }
 }

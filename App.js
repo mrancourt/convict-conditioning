@@ -7,8 +7,12 @@ import LegraiseScreen from './LegraiseScreen';
 import SquatsScreen from './SquatsScreen';
 import BridgesScreen from './BridgesScreen';
 import HandstandsScreen from './HandstandsScreen';
+import HomeScreen from './HomeScreen';
 
 const RootStack = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+  },
   Progress: {
     screen: ProgressScreen,
   },
@@ -32,7 +36,7 @@ const RootStack = createStackNavigator({
   },
 },
 {
-  initialRouteName: 'Progress',
+  initialRouteName: 'Home',
 });
 
 export default class App extends Component {
