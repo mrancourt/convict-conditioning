@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Text, Card, CardItem, Body, CheckBox, Content, Left,
+  Text, Card, CardItem, Body, Content, Left,
 } from 'native-base';
+import {
+  CheckBox,
+} from 'react-native';
 import dataStore from './datastore';
 
 class ExerciceList extends Component {
@@ -26,10 +29,10 @@ class ExerciceList extends Component {
       list.push(
         <CheckBox
           key={`step-checkbox-${step}`}
-          checked={stepId <= progress}
-          onPress={() => this.onCheckBoxPress(stepId)}
+          value={stepId <= progress}
+          onChange={() => this.onCheckBoxPress(stepId)}
         />,
-        <Text style={{ marginLeft: 20 }} key={`step-text-${step}`}>
+        <Text style={{ marginLeft: 5 }} key={`step-text-${step}`}>
           {step}
         </Text>,
       );
