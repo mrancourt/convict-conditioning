@@ -445,10 +445,10 @@
       ]
     }
   },
-  "@progress-pushups": 10,
-  "@progress-legraises": 20,
-  "@progress-squats": 5,
-  "@progress-pullups": 50,
-  "@progress-handstands": 0,
-  "@progress-bridges": 80
+  "@progress-pushups": 0.5,
+  "@progress-legraises": 0.7,
+  "@progress-squats": 0.4,
+  "@progress-pullups": 0.3,
+  "@progress-handstands": 0.1,
+  "@progress-bridges": 0.2
 }
