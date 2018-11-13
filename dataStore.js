@@ -607,7 +607,7 @@ const dataStore = {
         },
         {
           image: require('./images/bridges4.png'),
-          link: 'FFQysvxK0q4',
+          link: 'LbZDDvMVrto',
           name: 'Head Bridges',
           instructions: 'Starting in a bridge position with your back arched and your head gently touching the floor, push up until your head is no longertouching the floor. This is a bridge hold.',
           progression: [
