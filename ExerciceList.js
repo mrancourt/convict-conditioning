@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 import {
   Text, Card, CardItem, Body, Content, Left, Right, Button, Icon, Fab
 } from 'native-base';
@@ -58,6 +59,10 @@ class ExerciceList extends Component {
     this.setState({ [stateAttribute]: value }, () => {
       try {
         AsyncStorage.setItem(key, value.toString());
+        AsyncStorage.setItem(`${key}:timestamp`, moment().unix().toString());
+        AsyncStorage.getItem(`${key}:timestamp`).then(value => {
+          console.warn(moment(value, 'X').fromNow());
+        })
       } catch (error) {
         console.error(`error while saving ${error}`);
       }
