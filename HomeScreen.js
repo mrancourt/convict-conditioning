@@ -14,6 +14,7 @@ import HandstandsScreen from './HandstandsScreen';
 const PAGES = [
   'progress',
   'pushups',
+  'pullups',
   'lergaises',
   'squats',
   'bridges',
